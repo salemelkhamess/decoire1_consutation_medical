@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.devoir1_consultaion_medical.presentation.MedecinController">
+
+    <TableView fx:id="tableMedecins">
+        <columns>
+            <TableColumn text="Nom" fx:id="colNom"/>
+            <TableColumn text="Spécialité" fx:id="colSpecialite"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+
+    <Button text="Ajouter" onAction="#ajouterMedecin"/>
+    <Button text="Supprimer" onAction="#supprimerMedecin"/>
+    </HBox>
+</VBox>
